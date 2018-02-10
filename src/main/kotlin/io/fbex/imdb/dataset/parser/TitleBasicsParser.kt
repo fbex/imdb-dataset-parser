@@ -11,7 +11,7 @@ class TitleBasicsParser : DatasetParser<List<TitleBasic>> {
     }
 
     override fun parse(input: Reader): List<TitleBasic> {
-        val records = CSVFormat.TDF.withHeader(Headers::class.java).parse(input)
+        val records = CSVFormat.TDF.withQuote(null).withHeader(Headers::class.java).parse(input)
 
         records.first() // skip header
         return records.map {
@@ -21,10 +21,10 @@ class TitleBasicsParser : DatasetParser<List<TitleBasic>> {
                     primaryTitle = it.get(Headers.primaryTitle),
                     originalTitle = it.get(Headers.originalTitle),
                     isAdult = it.get(Headers.isAdult).toBoolean(),
-                    startYear = it.get(Headers.startYear).toInt(),
+                    startYear = it.get(Headers.startYear).toNullableInt(),
                     endYear = it.get(Headers.endYear).toNullableInt(),
                     runtimeMinutes = it.get(Headers.runtimeMinutes).toNullableInt(),
-                    genres = it.get(Headers.genres).split(",")
+                    genres = it.get(Headers.genres).toNullableList()
             )
             println(titleBasic)
             titleBasic

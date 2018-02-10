@@ -6,8 +6,8 @@ data class TitleBasic(
         val primaryTitle: String,
         val originalTitle: String,
         val isAdult: Boolean,
-        val startYear: Int,
+        val startYear: Int?,
         val endYear: Int?,
         val runtimeMinutes: Int?,
-        val genres: List<String>
+        val genres: List<String>?
 )

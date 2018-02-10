@@ -8,3 +8,8 @@ fun String.toNullableInt(): Int? {
     if (this == "\\N") return null
     return this.toInt()
 }
+
+fun String.toNullableList(): List<String>? {
+    if (this == "\\N") return null
+    return this.split(",")
+}

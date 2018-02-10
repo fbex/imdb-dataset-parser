@@ -1,5 +1,5 @@
 tconst	titleType	primaryTitle	originalTitle	isAdult	startYear	endYear	runtimeMinutes	genres
-tt0000001	short	Carmencita	Carmencita	0	1894	\N	1	Documentary,Short
+tt0000001	short	Carmencita	Carmencita	0	1894	\N	\N	Documentary,Short
 tt0000002	short	Le clown et ses chiens	Le clown et ses chiens	0	1892	\N	5	Animation,Short
 tt0000003	short	Pauvre Pierrot	Pauvre Pierrot	0	1892	\N	4	Animation,Comedy,Romance
 tt0000004	short	Un bon bock	Un bon bock	0	1892	\N	\N	Animation,Short
@@ -49,3 +49,5 @@ tt0000048	short	The Boxing Kangaroo	The Boxing Kangaroo	0	1896	\N	\N	Short
 tt0000049	short	Boxing Match; or, Glove Contest	Boxing Match; or, Glove Contest	0	1896	\N	\N	Short,Sport
 tt0000050	short	Bébé et fillettes	Bébé et fillettes	0	1896	\N	\N	Documentary,Short
 tt0000051	short	The Bohemian Encampment	Campement de bohémiens	0	1896	\N	\N	Documentary,Short
+tt0067098	tvEpisode	Willi Forst	Willi Forst	0	\N	\N	55	\N
+tt0544863	tvEpisode	"Consuela" (Or 'The New Mrs Saunders')	"Consuela" (Or 'The New Mrs Saunders')	0	1986	\N	36	Comedy
